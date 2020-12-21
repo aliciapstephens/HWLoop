@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.HashMap;
 
 class Main {
   
@@ -15,7 +16,8 @@ class Main {
     cars.put("Tuscon", "Hyundai");
     cars.put("Q60", "Infiniti");
     Scanner carInput = new Scanner(System.in);    System.out.println("what car (model) they are looking for?");
-    String carDesc= carInput.nextLine();    for (String i : cars.keySet()){
+    String carDesc= carInput.nextLine();    
+    for (String i : cars.keySet()){
         if (carDesc.equals(i)){
             System.out.println("Oh, you're looking for a " + carDesc + "?\n" + "Our" + cars.get(i) + "selection is right over here...\n");
             break;
