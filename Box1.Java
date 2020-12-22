@@ -1,6 +1,8 @@
 package Box;
 
 import java.util.*;
+import java.ArrayList;
+import java.Scanner;
 
 public class Box1 {
     public static void main(String[] args) 
@@ -19,16 +21,14 @@ public class Box1 {
              }  
          System.out.println(sum);
          
-         input.close();
-    
 for(int x=0; x < NumList.size(); x++)
 {
     sum += NumList.get(x);
 }
     System.out.println("The sum of the ArrayList is " +sum);
      }
-public class function void largestofFive(arr){
-       largestNumber=[int numbers];
+    Scanner input= new Scanner (System.in);
+    int largestNumber=[int numbers];
 
       for(arrayIndex = 0; arrayIndex < arr.length; arrayIndex++) 
       {
@@ -40,9 +40,17 @@ public class function void largestofFive(arr){
               largestNumber[arrayIndex] = arr[arrayIndex][subArrayIndex];
           }
       }
+		int mult = 1;
+		for (int i = 0; i < numGame.size(); i++) {
+			mult = mult * numGame.get(i);
+		}
+		System.out.println("Product: " + mult);
+		System.out.println("Largest Number: " + Collections.max(numGame));
+		System.out.println("Smallest Number: " + Collections.min(numGame));
+	}
+}
 }
 
-break;
 
 
 
